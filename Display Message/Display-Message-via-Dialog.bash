@@ -33,7 +33,8 @@
 scriptVersion="0.0.3"
 scriptResult="Version ${scriptVersion};"
 loggedInUser=$( /bin/echo "show State:/Users/ConsoleUser" | /usr/sbin/scutil | /usr/bin/awk '/Name :/ { print $3 }' )
-selfServicePath=$( /usr/bin/defaults read /Library/Preferences/com.jamfsoftware.jamf.plist self_service_app_path | sed 's| |\\\\ |g' )
+# selfServicePath=$( /usr/bin/defaults read /Library/Preferences/com.jamfsoftware.jamf.plist self_service_app_path | sed 's| |\\\\ |g' )
+selfServicePath=$( /usr/bin/defaults read /Library/Preferences/com.jamfsoftware.jamf.plist self_service_app_path )
 dialogPath="/usr/local/bin/dialog"
 if [[ -n ${4} ]]; then titleoption="--title"; title="${4}"; fi
 if [[ -n ${5} ]]; then messageoption="--message"; message="${5}"; fi
