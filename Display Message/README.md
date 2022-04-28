@@ -24,8 +24,10 @@ Based on Bart Reardon (@bartreardon)'s [Example Jamf Scripts](https://github.com
 - **Parameter 7:** `Button 1 Text (i.e., Details)`
 - **Parameter 8:** `Button 2 Text (i.e., Close)`
 - **Parameter 9:** `Info Button Text (i.e., KB8765309)`
-- **Parameter 10:** `Extra Flags (i.e., --iconsize 128 --timer 60 --blurscreen --quitoninfo --ignorednd --overlayicon "$(defaults read /Library/Preferences/com.jamfsoftware.jamf.plist self_service_app_path)" )`
+- **Parameter 10:** `Extra Flags (i.e., --iconsize 128 --timer 60 --blurscreen --quitoninfo --ignorednd --overlayicon SS )`
 - **Parameter 11:** `Action (i.e., jamfselfservice://content?entity=policy&id=17&action=view )`
+
+**Note:** Using the _keyword_ `SS` with `--overlayicon` will result in using your Jamf Pro Self Service icon as the overlay image.
 
 ---
 
