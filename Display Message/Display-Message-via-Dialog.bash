@@ -51,14 +51,12 @@ if [[ -z ${icon} ]]; then
 fi
 
 set -x
-echo "${extraflags}"
 
 # Default overlay icon to Jamf Pro Self Service when "--overlayicon SS" is specified
 if [[ ${extraflags} == *"--overlayicon SS"* ]]; then
     extraflags=$( echo "${extraflags}" | sed "s|SS|$selfServicePath|g" )
 fi
 
-echo "${extraflags}"
 set +x
 
 
