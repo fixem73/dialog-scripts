@@ -2,20 +2,23 @@
 
 ####################################################################################################
 #
-#	Display Message via swiftDialog
+#   Display Message via swiftDialog
 #
-#	Purpose: Displays an end-user message via swiftDialog
-#	See: https://github.com/bartreardon/swiftDialog-scripts
+#   Purpose: Displays an end-user message via swiftDialog
+#   See: https://github.com/bartreardon/swiftDialog-scripts
 #
 ####################################################################################################
 #
 # HISTORY
 #
-# 	Version 0.0.1, 18-Feb-2022, Dan K. Snelson (@dan-snelson)
-#		Original version
+#   Version 0.0.1, 18-Feb-2022, Dan K. Snelson (@dan-snelson)
+#      Original version
 #
-#	Version 0.0.2, 06-Apr-2022, Dan K. Snelson (@dan-snelson)
-#		Default icon to Jamf Pro Self Service if not specified
+#   Version 0.0.2, 06-Apr-2022, Dan K. Snelson (@dan-snelson)
+#       Default icon to Jamf Pro Self Service if not specified
+#
+#   Version 0.0.3, 27-Apr-2022, Dan K. Snelson (@dan-snelson)
+#       Added "SS" keyword for overlayicon
 #
 ####################################################################################################
 
@@ -27,9 +30,10 @@
 #
 ####################################################################################################
 
-scriptVersion="0.0.2"
+scriptVersion="0.0.3"
 scriptResult="Version ${scriptVersion};"
 loggedInUser=$( /bin/echo "show State:/Users/ConsoleUser" | /usr/sbin/scutil | /usr/bin/awk '/Name :/ { print $3 }' )
+selfServicePath=$( /usr/bin/defaults read /Library/Preferences/com.jamfsoftware.jamf.plist self_service_app_path | sed 's| |\\\\ |g' )
 dialogPath="/usr/local/bin/dialog"
 if [[ -n ${4} ]]; then titleoption="--title"; title="${4}"; fi
 if [[ -n ${5} ]]; then messageoption="--message"; message="${5}"; fi
@@ -45,6 +49,17 @@ if [[ -z ${icon} ]]; then
 	iconoption="--icon"
 	icon=$( defaults read /Library/Preferences/com.jamfsoftware.jamf.plist self_service_app_path )
 fi
+
+set -x
+echo "${extraflags}"
+
+# Default overlay icon to Jamf Pro Self Service when "--overlayicon SS" is specified
+if [[ ${extraflags} == *"--overlayicon SS"* ]]; then
+    extraflags=$( echo "${extraflags}" | sed "s|SS|$selfServicePath|g" )
+fi
+
+echo "${extraflags}"
+set +x
 
 
 ####################################################################################################
@@ -81,6 +96,8 @@ fi
 
 scriptResult="${scriptResult} Message Title: ${title};"
 
+set -x
+
 ${dialogPath} \
 	${titleoption} "${title}" \
 	${messageoption} "${message}" \
@@ -91,6 +108,8 @@ ${dialogPath} \
 	--infobuttonaction "https://servicenow.company.com/support?id=kb_article_view&sysparm_article=${infobuttontext}" \
 	--messagefont "size=14" \
 	${extraflags}
+
+set +x
 
 returncode=$?
 
