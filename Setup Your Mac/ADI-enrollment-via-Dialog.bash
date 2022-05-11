@@ -64,8 +64,8 @@ message="Please wait while the following apps are downloaded and installed:"
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 apps=(
-    "1password7|/Applications/1password7.app|1password7|https://adiit.jamfcloud.com/icon?id=5"
-    "8x8|/Applications/8x8.app|8x8|e9487eb95c7b3bb4797395c3e672d19afee6c038fcb2c1e5005f28271fc61f57"
+    "1Password 7|/Applications/1Password 7.app|1password7|https://adiit.jamfcloud.com/icon?id=5"
+    "8x8 Work|/Applications/8x8 Work.app|8x8|e9487eb95c7b3bb4797395c3e672d19afee6c038fcb2c1e5005f28271fc61f57"
     "Adobe Acrobat Reader DC|/Applications/Adobe Acrobat Reader DC.app|adobereaderdc|https://adiit.jamfcloud.com/icon?id=30"
     "BlueJeans|/Applications/BlueJeans.app|bluejeans|cf7ce0337747c8f1fd47a1e618a3ba09cdaab7027cc6d45542e5718aef31b43b"
     "Cisco Webex Meetings|/Applications/Cisco Webex Meetings.app|webexmeetings|https://adiit.jamfcloud.com/icon?id=28"
@@ -83,7 +83,7 @@ apps=(
     "Microsoft Word|/Applications/Microsoft Word.app|microsoftword|5db5888c25e018bec12fd0f46adb529d7f98a634f397b86258dfaef727e6472f"
     "OneDrive|/Applications/OneDrive.app|microsoftonedrive|https://adiit.jamfcloud.com/icon?id=31"
     "Visual Studio Code|/Applications/Visual Studio Code.app|visualstudiocode|011955c4065d9215a82905984bd200f224c8b3736e3fb947ba64b6fa28b0c02a"
-    "Zoom|/Applications/Zoom.app|zoomclient|https://adiit.jamfcloud.com/icon?id=29"
+    "Zoom|/Applications/zoom.us.app|zoomclient|https://adiit.jamfcloud.com/icon?id=29"
     )
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
