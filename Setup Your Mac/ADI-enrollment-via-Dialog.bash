@@ -65,28 +65,26 @@ message="Please wait while the following apps are downloaded and installed:"
 
 apps=(
     "1password7|/Applications/1password7.app|1password7|https://adiit.jamfcloud.com/icon?id=5"
-    "8x8|/Applications/8x8.app|8x8|https://ics.services.jamfcloud.com/icon/hash_e9487eb95c7b3bb4797395c3e672d19afee6c038fcb2c1e5005f28271fc61f57"
+    "8x8|/Applications/8x8.app|8x8|e9487eb95c7b3bb4797395c3e672d19afee6c038fcb2c1e5005f28271fc61f57"
     "Adobe Acrobat Reader DC|/Applications/Adobe Acrobat Reader DC.app|adobereaderdc|https://adiit.jamfcloud.com/icon?id=30"
-    "BlueJeans|/Applications/BlueJeans.app|bluejeans|https://ics.services.jamfcloud.com/icon/hash_cf7ce0337747c8f1fd47a1e618a3ba09cdaab7027cc6d45542e5718aef31b43b"
+    "BlueJeans|/Applications/BlueJeans.app|bluejeans|cf7ce0337747c8f1fd47a1e618a3ba09cdaab7027cc6d45542e5718aef31b43b"
     "Cisco Webex Meetings|/Applications/Cisco Webex Meetings.app|webexmeetings|https://adiit.jamfcloud.com/icon?id=28"
-    "Discord|/Applications/discord.app|discord|https://ics.services.jamfcloud.com/icon/hash_c9cc3acce604302efb51c949cacaab390ee5e0df3b67f9f1e95e005c7352a5bc"
+    "Discord|/Applications/discord.app|discord|c9cc3acce604302efb51c949cacaab390ee5e0df3b67f9f1e95e005c7352a5bc"
     "Firefox|/Applications/firefox.app|firefox|https://adiit.jamfcloud.com/icon?id=26"
     "Google Chrome|/Applications/Google Chrome.app|googlechrome|https://adiit.jamfcloud.com/icon?id=25"
-    "Microsoft Defender|/Applications/Microsoft Defender.app|microsoftdefenderatp|https://ics.services.jamfcloud.com/icon/hash_ed56a69efbae442e76a006fa899578d36e34313c5eb57c2fa6846694235f2029"
+    "Microsoft Defender|/Applications/Microsoft Defender.app|microsoftdefenderatp|ed56a69efbae442e76a006fa899578d36e34313c5eb57c2fa6846694235f2029"
     "Microsoft Edge|/Applications/Microsoft Edge.app|microsoftedgeenterprisestable|https://adiit.jamfcloud.com/icon?id=24"
-    "Microsoft Excel|/Applications/Microsoft Excel.app|microsoftexcel|https://ics.services.jamfcloud.com/icon/hash_cc7dae3eee23a4bb2d370ad921a146547dfbc6a1969309749193ea9c2b1ed173"
-    "Microsoft OneNote|/Applications/Microsoft OneNote.app|microsoftonenote|https://ics.services.jamfcloud.com/icon/hash_be465bfc1a778d9e898d228cacdcb17aeaf64d1020d34115013961c930daf133"
-    "Microsoft Outlook|/Applications/Microsoft Outlook.app|microsoftoutlook|https://ics.services.jamfcloud.com/icon/hash_45c629f0b5dac8f17a1f1e26446099071cbb0af068597707f6e72abd69024c91"
+    "Microsoft Excel|/Applications/Microsoft Excel.app|microsoftexcel|cc7dae3eee23a4bb2d370ad921a146547dfbc6a1969309749193ea9c2b1ed173"
+    "Microsoft OneNote|/Applications/Microsoft OneNote.app|microsoftonenote|be465bfc1a778d9e898d228cacdcb17aeaf64d1020d34115013961c930daf133"
+    "Microsoft Outlook|/Applications/Microsoft Outlook.app|microsoftoutlook|45c629f0b5dac8f17a1f1e26446099071cbb0af068597707f6e72abd69024c91"
     "Microsoft PowerPoint|/Applications/Microsoft PowerPoint.app|microsoftpowerpoint|https://adiit.jamfcloud.com/icon?id=25"
     "Microsoft Remote Desktop|/Applications/Microsoft Remote Desktop.app|microsoftremotedesktop|https://adiit.jamfcloud.com/icon?id=25"
-    "Microsoft Teams|/Applications/Microsoft Teams.app|microsoftteams|https://ics.services.jamfcloud.com/icon/hash_4e453f09f5119460c51d224b5d7597ec8a187412e4ef4405b5b0d5287c952ac3"
-    "Microsoft Word|/Applications/Microsoft Word.app|microsoftword|https://ics.services.jamfcloud.com/icon/hash_5db5888c25e018bec12fd0f46adb529d7f98a634f397b86258dfaef727e6472f"
+    "Microsoft Teams|/Applications/Microsoft Teams.app|microsoftteams|4e453f09f5119460c51d224b5d7597ec8a187412e4ef4405b5b0d5287c952ac3"
+    "Microsoft Word|/Applications/Microsoft Word.app|microsoftword|5db5888c25e018bec12fd0f46adb529d7f98a634f397b86258dfaef727e6472f"
     "OneDrive|/Applications/OneDrive.app|microsoftonedrive|https://adiit.jamfcloud.com/icon?id=31"
-    "Visual Studio Code|/Applications/Visual Studio Code.app|visualstudiocode|https://ics.services.jamfcloud.com/icon/hash_011955c4065d9215a82905984bd200f224c8b3736e3fb947ba64b6fa28b0c02a"
+    "Visual Studio Code|/Applications/Visual Studio Code.app|visualstudiocode|011955c4065d9215a82905984bd200f224c8b3736e3fb947ba64b6fa28b0c02a"
     "Zoom|/Applications/Zoom.app|zoomclient|https://adiit.jamfcloud.com/icon?id=29"
     )
-
-
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Set Dialog path and Command File
