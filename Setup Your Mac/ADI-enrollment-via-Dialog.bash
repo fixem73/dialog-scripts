@@ -83,6 +83,7 @@ apps=(
     "Microsoft Word|/Applications/Microsoft Word.app|microsoftword|5db5888c25e018bec12fd0f46adb529d7f98a634f397b86258dfaef727e6472f"
     "OneDrive|/Applications/OneDrive.app|microsoftonedrive|5295787f65d45b6bf2a3e1815539463178603b057074da58a902d57ae0cbe22e"
     "Visual Studio Code|/Applications/Visual Studio Code.app|visualstudiocode|011955c4065d9215a82905984bd200f224c8b3736e3fb947ba64b6fa28b0c02a"
+    "Company Portal|/Applications/Company Portal.app|microsoftcompanyportal|d1b4c6d3f7f6f73d6582ba074d3f16fa23c3959c2e1813c789bb00757a21ff12"
     "Zoom|/Applications/zoom.us.app|zoomclient|7aead0fb0b7e698cc7530b17361eb203fd2503bdc0092cf0607800db961ec4e4"
     )
 
